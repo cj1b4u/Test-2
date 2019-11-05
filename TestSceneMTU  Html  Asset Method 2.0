@@ -1,0 +1,17 @@
+<!DOCTYPE>
+<html>
+<script src="ARJS_Files/aframe.min.js"></script>
+<script src="ARJS_Files/aframe-ar.js"></script>
+
+<a-scene embedded arjs = 'trackingMethod: best;'>
+<a-anchor hit-testing-enabled='true'>
+
+<a-asset-item id="Model" scr="Models/Part24.obj"></a-asset-item>
+
+<a-obj-model src="#Model" ></a-obj-model>
+<a-sphere position='2 0.0 0.0' color = "blue"></a-sphere>
+
+</a-anchor>
+	<a-camera-static/>
+</a-scene>
+<html>
